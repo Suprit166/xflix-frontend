@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -48,4 +48,53 @@ li {
 
 li:hover {
   background-color: #f1f1f1;
+} */
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.video-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.video-details {
+  margin-top: 8px;
+}
+
+/* Add to styles.css */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.filter {
+  display: flex;
+  gap: 20px;
+}
+
+.filter label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
